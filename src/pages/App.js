@@ -1,9 +1,10 @@
 import Layout from '../components/core/Layout'
+import AppComponent from '../components/pageRefs/AppComponent'
 
 const App = () => {
   return (
     <Layout>
-      <h2>Hello!</h2>
+      <AppComponent />
     </Layout>
   )
 }
