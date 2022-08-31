@@ -1,11 +1,13 @@
+@use '../../../styles/mixins' as *;
+
 .appLogo {
-  height: 25px;
+  height: 35px;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .appLogo {
-    animation: App-logo-spin infinite 20s linear;
+    @include spin(20s);
   }
 }
 
@@ -18,11 +20,3 @@
   color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
