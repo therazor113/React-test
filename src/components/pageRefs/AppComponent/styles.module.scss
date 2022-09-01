@@ -1,6 +1,13 @@
 .container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  button {
+    width: 100px;
+    height: 25px;
+    font-size: 30px;
+    line-height: 0;
+  }
   h2 {
     font-size: calc(10px + 5vw);
   }
